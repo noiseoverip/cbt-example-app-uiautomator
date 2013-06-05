@@ -11,11 +11,11 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
  * @author esauali
  * 
  */
-public class TestButton1 extends UiAutomatorTestCase {
+public class TestButton3 extends UiAutomatorTestCase {
 
 	private static final String TAG = "PushButtonTest";
 	private Helper helper;
-	private static final String buttonText = "button1";
+	private static final String buttonText = "button2";
 	
 	public void test1() throws UiObjectNotFoundException {
 
@@ -29,17 +29,8 @@ public class TestButton1 extends UiAutomatorTestCase {
 		// Find message and verify that it contains valid string
 		UiObject message = new UiObject(new UiSelector().description("message"));
 		assertTrue(message.exists());
-		assertEquals(buttonText, message.getText());
-		
+		assertEquals(buttonText, message.getText());		
 		helper.closeApp();
-		
-//		Bundle status = new Bundle();
-//		status.putString("msg", "Test was succesfull");
-//		status.putString("product", getUiDevice().getProductName());
-//		status.putInt("dp-width", getUiDevice().getDisplayWidth());
-//		status.putInt("dp-height", getUiDevice().getDisplayHeight());
-//		getAutomationSupport().sendStatus(Activity.RESULT_OK, status);
-		
 		Log.d(TAG, "Finish test");
 	}
 

@@ -16,8 +16,7 @@ public class Helper {
 	public void findAppWithName(String name, String packagename) throws UiObjectNotFoundException{
 		testcase.getUiDevice().pressBack();
 		testcase.getUiDevice().pressHome();		
-		new UiObject(new UiSelector().description("Apps")).clickAndWaitForNewWindow();			
-		new UiObject(new UiSelector().text("Apps")).click();		
+		new UiObject(new UiSelector().description("Apps")).clickAndWaitForNewWindow();
 	
 		UiScrollable appViews = new UiScrollable(new UiSelector().scrollable(true));		
 		appViews.setAsHorizontalList();		
