@@ -1,5 +1,5 @@
 call ant build
 echo Pushing file...
-call adb push c:\Dev\ws-android\OneButtonUiTest\bin\OneButtonUiTest.jar /data/local/tmp/
+call adb push D:\Dev\Git\cbt-example-app-uiautomator\bin\OneButtonUiTest.jar /data/local/tmp/
 echo Running test...
-call adb shell uiautomator runtest OneButtonUiTest.jar -c com.test.UIPushButtonTest
+call adb shell uiautomator runtest OneButtonUiTest.jar -c com.test.TestButton1,com.test.TestButton2,com.test.TestButton3,com.test.TestButton4
