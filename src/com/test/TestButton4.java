@@ -21,7 +21,7 @@ public class TestButton4 extends UiAutomatorTestCase {
 
 		Log.d(TAG, "Starting test");
 		helper = new Helper(this);	
-		helper.findAppWithName("CbtTestApp1", "com.cbttestapp1");
+		helper.findAppWithName("CbtTestApp1", "com.cbttestapp1/.CbtTestApp1");
 		
 		new UiObject(new UiSelector().description(buttonText)).clickAndWaitForNewWindow(2000);			
 		//new UiObject(new UiSelector().text("Apps")).click();
